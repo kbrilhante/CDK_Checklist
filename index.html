@@ -28,7 +28,14 @@
         <h1 class="display-4 text-center">Checklist</h1>
         <label for="txtItens" class="form-label">Lista:</label>
         <textarea name="txtItens" id="txtItens" cols="50" rows="10" placeholder="Digite um item por linha" class="form-control"></textarea>
-        <button class="btn btn-primary d-block mx-auto my-3" onclick="create()">Criar checklist</button>
+        <div class="mx-auto text-center">
+            <button class="btn btn-primary btn-lg d-inline-block mx-auto my-3" onclick="create()">
+                <i class="fa-solid fa-check"></i>
+            </button>
+            <button class="btn btn-danger btn-lg d-inline-block mx-auto my-3" onclick="del()">
+                <i class="fa-solid fa-trash"></i>
+            </button>
+        </div>
     </div>
 
     <script src="./script/create.js"></script>

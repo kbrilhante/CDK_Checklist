@@ -20,16 +20,15 @@ function fillList() {
         divList.appendChild(formCheck);
 
         const cBox = document.createElement("input");
-        cBox.className = "form-check-input";
+        cBox.className = "form-check-input fs-4";
         cBox.type = "checkbox";
         cBox.value = "";
-
         cBox.id = item.replaceAll(" ", "");
         cBox.addEventListener('change', textHandle)
         formCheck.appendChild(cBox);
 
         const label = document.createElement("label");
-        label.className = "form-check-label fw-bold";
+        label.className = "form-check-label fs-4 fw-bold";
         label.htmlFor = cBox.id;
         label.textContent = item;
         formCheck.appendChild(label);

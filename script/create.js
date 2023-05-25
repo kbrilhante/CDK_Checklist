@@ -1,15 +1,10 @@
 initialize();
 
-
 function initialize() {
     const list = localStorage.getItem("list");
     if (list) {
         document.querySelector("textarea").value = list;
     }
-    document.querySelectorAll("button").forEach((button) => {
-        button.addEventListener("mouseenter", mouseOverButton);
-        button.addEventListener("mouseleave", mouseLeaveButton);
-    });
 }
 
 function create() {
@@ -26,7 +21,3 @@ function del() {
     list.value = "";
     localStorage.removeItem("list");
 }
-
-function mouseOverButton(e) {}
-
-function mouseLeaveButton(e) {}
